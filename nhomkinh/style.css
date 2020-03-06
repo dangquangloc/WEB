@@ -1,10 +1,8 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
 body{
     font-size: 30px;
     background:#f3f3f3;
+  
 }
 .container{ 
     margin: 0 auto;
@@ -30,25 +28,83 @@ body{
 }
 .main-menu #menu{
     background:navy;
+    padding: 0px;
+    border-bottom: 3px solid red;
+
+}
+.main-menu{
 }
 #active{
     margin: 0px;
-    padding: 10px 0px;
+    padding: 10px  0px;
+
+}
+ul{
+    padding: 0px;
+    
 }
 ul li {
     padding: 10px 15px;
     position: relative;
     float: left;
     list-style: none;
-    margin-left:20px;
+    padding-left: 0px;
+    margin-left: 50px;
     
 }
-ul li ul li{
+
+ul li ul{
     position: absolute;
     visibility: hidden;
+    top: 90px;
+    width: 200;
+    background:black;
+    transition: all .5s;
+    opacity: 0;
+}
+ul li ul li{
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 100%; 
+}
+ul li:hover ul{
+    visibility: visible;
+    top: 75px;
+    opacity: 0.8;
 }
 a{
     text-decoration: none;
    color: white;
+   padding: 15px 15px;
+   color:#ccc;
+   display: inline-block; 
  
+}
+#menu ul li:hover a{
+    background: black;
+}
+.space{
+    height: 20px;
+}
+h3{
+   padding: 0px;
+   margin: 0px;
+}
+.cato{
+    background: blue;
+    width: 300px;
+    float: left;
+  
+}
+.cato .title{
+    text-align: center;
+    
+}
+.main-content{
+   background: green;
+}
+.footer{
+    background: black;
+    padding: 0px;
+    margin: 0px;
 }
