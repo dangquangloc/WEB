@@ -1,4 +1,7 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     font-size: 30px;
     background:#f3f3f3;
@@ -27,23 +30,18 @@ body{
   max-width: 200px;
 }
 .main-menu #menu{
-    background:navy;
-    padding: 0px;
+    background:#3333FF;
     border-bottom: 3px solid red;
 
 }
-.main-menu{
+#menu a {
+    border-radius: 5px;
 }
 #active{
-    margin: 0px;
     padding: 10px  0px;
+}
 
-}
-ul{
-    padding: 0px;
-    
-}
-ul li {
+#menu ul li {
     padding: 10px 15px;
     position: relative;
     float: left;
@@ -52,15 +50,21 @@ ul li {
     margin-left: 50px;
     
 }
+#menu ul li ul li{
+    margin-left: 0px;
+
+}
 
 ul li ul{
+    z-index: 9999;
     position: absolute;
     visibility: hidden;
     top: 90px;
     width: 200;
     background:black;
-    transition: all .5s;
+    transition: all .8s;
     opacity: 0;
+    border-radius: 5px; 
 }
 ul li ul li{
     margin-left: 0px;
@@ -70,13 +74,12 @@ ul li ul li{
 ul li:hover ul{
     visibility: visible;
     top: 75px;
-    opacity: 0.8;
+    opacity: 1;
 }
 a{
     text-decoration: none;
    color: white;
    padding: 15px 15px;
-   color:#ccc;
    display: inline-block; 
  
 }
@@ -85,26 +88,60 @@ a{
 }
 .space{
     height: 20px;
+    background: #f3f3f3;
 }
-h3{
-   padding: 0px;
-   margin: 0px;
+.content{
+  
 }
+
 .cato{
     background: blue;
-    width: 300px;
+    width: 200px;
     float: left;
   
 }
-.cato .title{
-    text-align: center;
-    
+.cato .title {
+    text-align: center; 
+    background: #ccc;
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px;
+}
+.cato .list ul{
+    padding: 0px;
+    list-style: none;
 }
 .main-content{
-   background: green;
+    position: relative;
+    margin-left: 300px;
+    overflow: auto;
+    background: white;
+}
+.introduce{
+}
+.title h3{
+text-align: center;
+background:#404040;
+margin-bottom: 30px;
+padding:20px;
+border-radius: 4px;
+color: #E0E0E0;
+}
+.list-SP{
+    float: left;
+    width: 50%;
+}
+.list-SP img{
+    padding: 5px;
+    border: 3px solid burlywood;
+    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+}
+#space{
+    height: 100px;
 }
 .footer{
     background: black;
-    padding: 0px;
-    margin: 0px;
+    color: white;
 }
